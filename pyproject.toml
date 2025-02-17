@@ -1,0 +1,19 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=65.5.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "esppyflash"
+version = "0.1.0"
+description = "Simple CLI wrapper for flashing ESP32 boards with MicroPython or CircuitPython."
+readme = "README.md"
+authors = [{ name = "George White", email = "stonehippo@gmail.com" }]
+dependencies = [
+    "click >= 8.1.8",
+    "esptool >= 4.8.1",
+]
+
+[project.scripts]
+esppyflash = "esppyflash.__main__:cli"
