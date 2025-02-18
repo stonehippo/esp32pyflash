@@ -30,7 +30,7 @@ def cli(firmware):
     if click.confirm("Erase flash?"):
         click.echo("Erasing flash on ESP32…")
         erase = shlex.split('esptool.py erase_flash')
-        #subprocess.run(erase)
+        subprocess.run(erase)
         click.echo(f"Flash erased!")
     else:
         click.echo("Skipping erasing flash and exiting")
@@ -38,7 +38,7 @@ def cli(firmware):
     if click.confirm(f"Flash device with {firmware}?"):
         click.echo(f"Flashing bin {bin} to device…")
         flash = shlex.split(f'esptool.py --baud 460800 write_flash 0 {bin_path}')
-        #subprocess.run(flash)
+        subprocess.run(flash)
         click.echo("Device flashed!")
 
 if __name__ == '__main__':
