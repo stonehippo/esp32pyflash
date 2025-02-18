@@ -15,7 +15,7 @@ pip install .
 Directly from Github:
 
 ```
-pip install moshup@git+https://github.com/stonehippo/esp32pyflash
+pip install esp32pyflash@git+https://github.com/stonehippo/esp32pyflash
 ```
 
 ## Usage
