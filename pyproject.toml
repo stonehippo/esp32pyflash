@@ -5,7 +5,7 @@ requires = ["setuptools>=65.5.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "esppyflash"
+name = "esp32pyflash"
 version = "0.1.0"
 description = "Simple CLI wrapper for flashing ESP32 boards with MicroPython or CircuitPython."
 readme = "README.md"
@@ -16,4 +16,4 @@ dependencies = [
 ]
 
 [project.scripts]
-esppyflash = "esppyflash.__main__:cli"
+esp32pyflash = "esp32pyflash.__main__:cli"

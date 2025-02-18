@@ -1,4 +1,4 @@
-# esppyflash
+# esp32pyflash
 
 A simple utility for flashing MicroPython or CircuitPython on an ESP32.
 
@@ -7,21 +7,21 @@ A simple utility for flashing MicroPython or CircuitPython on an ESP32.
 From a local clone of this repo:
 
 ```
-git clone https://github.com/stonehippo/esppyflash
-cd esppyflash
+git clone https://github.com/stonehippo/esp32pyflash
+cd esp32pyflash
 pip install .
 ```
 
 Directly from Github:
 
 ```
-pip install moshup@git+https://github.com/stonehippo/esppyflash
+pip install moshup@git+https://github.com/stonehippo/esp32pyflash
 ```
 
 ## Usage
 
 ```
-Usage: esppyflash [OPTIONS]
+Usage: esp32pyflash [OPTIONS]
 
 Options:
   -f, --firmware [MicroPython|CircuitPython]
